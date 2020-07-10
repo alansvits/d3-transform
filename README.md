@@ -34,7 +34,7 @@ d3.select('svg').selectAll('g')
 With **d3-transform**, you can rewrite the above code like this:
 
 ```javascript
-var transform = d3.transform()
+var transform = d3Transform()
     .translate(function(d) { return [20, d.size * 10] })
     .rotate(40)
     .scale(function(d) { return d.size + 2 });
